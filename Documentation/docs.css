@@ -1,0 +1,13 @@
+#important {
+    background-color: rgb( 230, 230, 0 );
+}
+
+ #main {
+     margin-left: 160px;
+}
+
+#sidebar {
+    height: 100%;
+    width: 160px;
+    background-color: rgb( 230, 230, 230 );
+}
