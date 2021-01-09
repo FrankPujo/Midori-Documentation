@@ -1,13 +1,47 @@
+/* ---------- CSS styles ---------- */
+
+/* by ID */
+
+/* advice at the beginning of docs.html */
 #important {
-    background-color: rgb( 230, 230, 0 );
+    background-color: rgb( 250, 240, 0 );
+    width: 910px;
+    line-height: 30px;
 }
 
+/* main content of the page */
  #main {
-     margin-left: 160px;
+     margin-left: 170px;
 }
 
+/* sidebar on every page */
 #sidebar {
     height: 100%;
     width: 160px;
+    position: fixed;
+    background-color: rgb( 220, 255, 220 );
+    border-width: 10;
+    border-color: rgb( 0, 160, 10 );
+    border-style: solid;
+}
+
+/* logo in docs.html */
+#logo {
+    float: right;
+}
+
+/* table of contents */
+#table {
     background-color: rgb( 230, 230, 230 );
+    margin-left: 30px;
+    width: 200px;
+}
+
+/* by CLASSES */
+
+/* sidebar link */
+
+.sblinks {
+    line-height: 22px;
+    padding-left: 5px;
 }
