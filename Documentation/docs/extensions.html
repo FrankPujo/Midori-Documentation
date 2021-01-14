@@ -7,17 +7,54 @@
     </head>
     <body>
         <div id="sidebar">
-            <a href="../docs.html">&lt; &lt; &lt;</a>
+            <a class="sblinks" href="../docs.html">&lt; &lt; &lt;</a>
             <h2>Midori Docs</h2>
             <a class="sblinks" href="download.html">Get Midori</a><br>
-            <a class="sblinks" href="user.html">User guide</b><br>
+            <a class="sblinks" href="user.html">User guide</a><br>
             <b class="sblinks">Extensions</b><br>
             <a class="sblinks" href="developers.html">For Developers</a><br>
             <a class="sblinks" href="links.html">Useful links</a><br>
+            <a class="sblinks" href="contribution.html">Contribute</a><br>
         </div>
         <div id="main">
             <h1>Midori Docs - Extensions</h1>
-            <p>To install extensions for the Midori Browser...</p>
+            <p>Midori has partial support chrome extensions (crx files).</p>
+            <p id="code1">
+                manifest.json<br>
+                &nbsp; &nbsp; name<br>
+                &nbsp; &nbsp; version<br>
+                &nbsp; &nbsp; description<br>
+                &nbsp; &nbsp; background:<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; page: *.html<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; scripts:<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; - *.js<br>
+                &nbsp; &nbsp; browser_action:<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; default_popup: *.html<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; default_icon: *.png<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; default_title<br>
+                &nbsp; &nbsp; sidebar_action:<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; default_panel: *.html<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; default_icon: *.png<br>
+                &nbsp; &nbsp; &nbsp; &nbsp;default_title<br>
+                &nbsp; &nbsp; content_scripts:<br>
+                &nbsp; &nbsp; js:<br>
+                &nbsp; &nbsp; - *.js<br>
+                &nbsp; &nbsp; css:<br>
+                &nbsp; &nbsp; - *.css<br>
+                &nbsp; &nbsp; manifest_version: 2<br>
+                <br>
+                *.js<br>
+                &nbsp; &nbsp; browser (chrome)<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; tabs<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; create<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - url: url<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; executeScript<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - code: string<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; notifications<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; create<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; - title: string<br>
+                &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; message: string
+            </p>
         </div>
     </body>
 </html>

@@ -3,31 +3,42 @@
     <head>
         <title>Midori Development</title>
         <link href="../styles.css" type="text/css" rel="stylesheet">
-        <link href="img/docs.ico" type="image/x-icon" rel="shortcut icon">
+        <link href="../img/docs.ico" type="image/x-icon" rel="shortcut icon">
     </head>
     <body>
         <div id="sidebar">
-            <a href="../docs.html">&lt; &lt; &lt;</a>
+            <a class="sblinks" href="../docs.html">&lt; &lt; &lt;</a>
             <h2>Midori Docs</h2>
             <a class="sblinks" href="download.html">Get Midori</a><br>
             <a class="sblinks" href="user.html">User guide</a><br>
             <a class="sblinks" href="extensions.html">Extensions</a><br>
             <b class="sblinks">For Developers</b><br>
             <a class="sblinks" href="links.html">Useful links</a><br>
+            <a class="sblinks" href="contribution.html">Contribute</a><br>
         </div>
         <div id="main">
             <h1>Midori for Developers</h1>
             <div id="table">
                 <h3>Table of contents</h3>
                 <ol>
-                    <li><a href="#part1">part1</a></li>
-                    <li><a href="#part2">part2</a></li>
-                    <li><a href="#part3">part3</a></li>
+                    <li><a href="#codrul">Code style</a></li>
                 </ol>
             </div>
-            <div id="part1">
-                <h2>Part 1</h2>
-                <p>Content</p>
+            <div id="codestyle">
+                <h2>How to write the code</h2>
+                <p>To contribute to the Midori code please follow these styling rules:</p>
+                <ul>
+                    <li>4 space indentation, no tabs</li>
+                    <li>Between 80 to 120 columns</li>
+                    <li>Use <span class="snip">//</span> or <span class="snip">/* */</span> style comments</li>
+                    <li>Call variables <span class="snip">animal</span> and <span class="snip">animal_shelter</span> instead of <del>camelCase</del></li>
+                    <li>Keep a space between functions/ keywords and round parentheses</li>
+                    <li>Prefer <span class="snip"> new Gtk.Widget ()</span> over <span class="snip">using Gtk; new Widget ()</span></li>
+                    <li><span class="snip">Midori</span> and <span class="snip">GLib</span> namespaces should be omitted</li>
+                    <li>Don't use <span class="snip">private</span> specifiers (which is the default)</li>
+                    <li>Stick to standard Vala-style curly parentheses on the same line</li>
+                    <li>Cuddled <span class="snip">} else {</span> and <span class="snip">} catch (Error error) {</span></li>
+                </ul>
             </div>
         </div>
     </body>

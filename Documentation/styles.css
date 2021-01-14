@@ -27,14 +27,14 @@ tr :hover {
 
 /* main content of the page */
  #main {
-     margin-left: 11%;
+     margin-left: 12%;
      width: 88%;
 }
 
 /* sidebar on every page */
 #sidebar {
     height: 100%;
-    width: 10%;
+    width: 11%;
     position: fixed;
     background-color: rgb( 210, 255, 210 );
     border-width: 10;
@@ -61,6 +61,15 @@ tr :hover {
     width: 30%;
 }
 
+/* long code block */
+#code1 {
+    background-color: rgb( 230, 230, 230 );
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    width: 22%;
+}
+
 /* by CLASSES */
 
 /* sidebar link */
@@ -70,9 +79,16 @@ tr :hover {
     padding-left: 5px;
 }
 
+/* download button */
+
 .button {
     background-color: rgb( 255, 170, 0 );
     line-height: 23px;
-    width: 5%;
+    width: 7%;
     text-align: center;
+}
+
+/* code snippets */
+.snip {
+    background-color: rgb( 230, 230, 230 );
 }

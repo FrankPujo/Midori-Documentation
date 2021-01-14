@@ -3,11 +3,11 @@
     <head>
         <title>Get Midori</title>
         <link href="../styles.css" type="text/css" rel="stylesheet">
-        <link href="img/docs.ico" type="image/x-icon" rel="shortcut icon">
+        <link href="../img/docs.ico" type="image/x-icon" rel="shortcut icon">
     </head>
     <body>
         <div id="sidebar">
-            <a href="../docs.html">&lt; &lt; &lt;</a>
+            <a class="sblinks" href="../docs.html">&lt; &lt; &lt;</a>
             <h2>Midori Docs</h2>
             <b class="sblinks">Get Midori</b>
             <ol>
@@ -20,6 +20,7 @@
             <a class="sblinks" href="extensions.html">Extensions</a><br>
             <a class="sblinks" href="developers.html">For Developers</a><br>
             <a class="sblinks" href="inks.html">Useful links</a><br>
+            <a class="sblinks" href="contribution.html">Contribution</a><br>
         </div>
         <div id="main">
             <h1>Midori Docs - Download</h1>
@@ -35,7 +36,12 @@
             <a href="https://astian.org/en/midori-browser/download/">Download</a>
             <div id="linux">
                 <h2>Linux</h2>
-                <p></p>
+                <div>To download Midori on Linux you can use snaps (if supported by your distribution) with this command:
+                    <p id="code">snap install midori</p>
+                    Or you can install it from FlatHux using:
+                    <p id="code">flatpak install flathub org.midori_browser.Midori</p>
+                    
+                </div>
                 <p class="button"><a href="">Download</a></p>
             </div>
             <div id="windows">
