@@ -19,4 +19,4 @@ For contribution guidlines:
 - follow the template (found in template.html) and the writing style when writing html;
 - for CSS elements stick with styles.css and add comments above to specify what it does (as it is currently in the file).  
 
-Thank you very much!
+**Thank you very much!**
