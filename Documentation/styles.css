@@ -4,16 +4,16 @@
 
 /* whole website */
 body {
-    background-color: rgb( 255, 255, 255 );
+    background-color: rgb( 245, 245, 245 );
 }
 
 /* for table stiling */
 td, th {
-    border-bottom: 2px solid rgb( 120, 120, 120 );
+    border-bottom: 2px solid rgb( 100, 100, 100 );
 }
 
 tr :hover {
-    background-color: rgb( 220, 220, 220 );
+    background-color: rgb( 210, 210, 210 );
 }
 
 /* by ID */
@@ -40,6 +40,7 @@ tr :hover {
     border-width: 10;
     border-color: rgb( 0, 170, 00 );
     border-style: solid;
+    z-index: 1;
 }
 
 /* logo in docs.html */
@@ -51,7 +52,7 @@ tr :hover {
 
 /* table of contents */
 #table {
-    background-color: rgb( 230, 230, 230 );
+    background-color: rgb( 220, 220, 220 );
     margin-left: 1%;
     width: 14%;
 }
@@ -63,11 +64,58 @@ tr :hover {
 
 /* long code block */
 #code1 {
-    background-color: rgb( 230, 230, 230 );
+    background-color: rgb( 220, 220, 220 );
     padding-top: 5px;
     padding-bottom: 5px;
     padding-left: 3px;
     width: 22%;
+}
+
+#bbar {
+    background-color: rgb( 30, 30, 30 );
+    height: 160px;
+    z-index: -1;
+    margin-left: -8px;
+    width: 101%;
+    margin-bottom: -30px;
+}
+
+/* bottom bar left */
+#btl {
+    float: left;
+    color: rgb( 255, 255, 255 );
+    margin-left: 320px;
+}
+
+#bll1 {
+    float: left;
+    margin-left: -150px;
+    margin-top: 60px;
+}
+
+#bll2 {
+    float: left;
+    margin-left: 40px;
+    margin-top: 60px;
+}
+
+/* bottom bar right */
+#btr {
+    float: right;
+    color: rgb( 255, 255, 255 );
+    margin-right: 580px;
+}
+
+#blr1 {
+    float: right;
+    margin-top: 60px;
+    margin-right: -180px;
+}
+
+#blr2 {
+    float: right;
+    margin-top: 60px;
+    margin-right: 60px;
 }
 
 /* by CLASSES */
@@ -90,5 +138,5 @@ tr :hover {
 
 /* code snippets */
 .snip {
-    background-color: rgb( 230, 230, 230 );
+    background-color: rgb( 220, 220, 220 );
 }
