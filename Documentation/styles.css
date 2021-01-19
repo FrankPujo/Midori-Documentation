@@ -33,7 +33,7 @@ tr :hover {
 
 /* sidebar on every page */
 #sidebar {
-    height: 100%;
+    height: 94%;
     width: 11%;
     position: fixed;
     background-color: rgb( 210, 255, 210 );
@@ -139,4 +139,11 @@ tr :hover {
 /* code snippets */
 .snip {
     background-color: rgb( 220, 220, 220 );
+}
+
+/* line between divs */
+.line {
+    width: 99%;
+    height: 10px;
+    border-bottom: 1px solid black;
 }
