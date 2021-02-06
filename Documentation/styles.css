@@ -41,7 +41,7 @@ tr :hover {
     border-width: 8;
     border-color: rgb( 0, 170, 00 );
     border-style: solid;
-    z-index: 0;
+    z-index: auto;
     border-radius: 6px;
 }
 
@@ -73,51 +73,47 @@ tr :hover {
     width: 22%;
 }
 
+/* bottom bar*/
 #bbar {
     background-color: rgb( 30, 30, 30 );
     height: 160px;
-    z-index: 1;
-    margin-left: -8px;
     width: 101%;
-    margin-bottom: -30px;
+    display: grid;
+    grid-row: auto;
+    grid-column-gap: 12%;
+    color: white;
 }
 
-/* bottom bar left */
-#btl {
-    float: left;
-    color: rgb( 255, 255, 255 );
-    margin-left: 320px;
+#home-cell {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    width: 15%;
+    align-content: center;
 }
 
-#bll1 {
-    float: left;
-    margin-left: -150px;
-    margin-top: 60px;
+#gh-cell {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    width: 15%;
 }
 
-#bll2 {
-    float: left;
-    margin-left: 40px;
-    margin-top: 60px;
+#gl-cell {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    width: 15%;
 }
 
-/* bottom bar right */
-#btr {
-    float: right;
-    color: rgb( 255, 255, 255 );
-    margin-right: 580px;
+#down-cell {
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+    width: 15%;
 }
 
-#blr1 {
-    float: right;
-    margin-top: 60px;
-    margin-right: -180px;
-}
 
-#blr2 {
-    float: right;
-    margin-top: 60px;
-    margin-right: 60px;
+/* bottom bar icons */
+.bbar-icon {
+    width: 60px;
+    height: 60px;
 }
 
 /* top bar */
